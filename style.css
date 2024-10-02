@@ -1,0 +1,105 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    display: flex;
+
+    background: whitesmoke;
+}
+
+/* CALCULATOR BODY */
+.calculator {
+    position: relative;
+
+    max-width: 300px;
+    width: 100%;
+
+    border-radius: 12.5px;
+    padding: 15px;
+
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0.15, 0.15, 0.15, 0.20);
+}
+
+/* CALCULATOR BUTTONS */
+.gridButton {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.gridButton button {
+    border: none;
+    border-radius: 6.5px;
+
+    padding: 12px;
+
+    font-size: 22px;
+    font-weight: 400;
+
+    box-shadow: 0 3.5px 0 #0009;
+}
+    
+/* BUTTONS STYLE */
+.operator {
+    color: black;
+    background-color: lightgrey;
+}
+
+.operator2 {
+    color: white;
+    background-color: rgb(55, 185, 35);
+}
+
+.num{
+    color: white;
+    background-color: gray;
+}
+
+/* BUTTON HOVER */
+.operator:active {
+    box-shadow: none;
+    transform: translateY(3.5px);
+}
+
+.operator2:active {
+    box-shadow: none;
+    transform: translateY(3.5px);
+}
+
+.num:active {
+    box-shadow: none;
+    transform: translateY(3.5px);
+}
+
+/* NUMBER DISPLAY */
+.display {
+    height: 100px;
+    width: 100%;
+
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+    text-align: right;
+
+    color: black;
+    background-color:whitesmoke ;
+
+    font-size: 28px;
+    font-weight: 400;
+
+    border: none;
+    outline: none;
+}
